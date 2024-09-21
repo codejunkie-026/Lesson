@@ -1,0 +1,64 @@
+body{
+}
+
+.header{
+    height: 600px;
+    background-image: url(../img/batuhan-dogan-XnYs6CYygRE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    width: 85%;
+    margin: 0;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbrand{
+    color: white;
+}
+.nav ul li{
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+    position: relative;
+}
+.nav ul li{
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.nav ul li::after{
+    content:"";
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(50%);
+    text-align: center;
+    color: white;
+}
+.content-btn{
+    width: 200px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.content-btn:hover{
+    background: white;
+    color: black;
+}
